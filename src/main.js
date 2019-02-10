@@ -20,12 +20,12 @@ window.shared_data = {
         title: "L'étrange noël de M. Jack",
         release_date: 1994,
         
-        language: "",
+        language: "Américain",
         
         director: { 
             name: "Henry Selick",
             nationality: "Américain",
-            birth_date: "30/11/19(é",
+            birth_date: "30/11/1952",
           },
         genre: "Fantastique",
         poster: "https://image.noelshack.com/fichiers/2019/06/6/1549740154-noel.jpeg",

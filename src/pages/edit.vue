@@ -8,7 +8,7 @@
         <v-card ref="form">
           <v-card-text>
             
-            <b class="edit-color left">Film</b><br>
+            <b class="left">Film</b><br>
 
             
             <v-text-field ref="title" color="teal" v-model="movie_to_edit.title" 
@@ -29,8 +29,15 @@
               label="Origine film" type="text">
             </v-text-field>
            
+            <b class="left">Liens</b><br>
 
-            <b class="edit-color left">Réalisateur</b><br>
+            
+            <v-text-field ref="poster" color="teal" v-model="movie_to_edit.poster" 
+              label="Affiche du film" type="text">
+            </v-text-field>
+            
+          
+            <b class="left">Réalisateur</b><br>
 
             
             <v-text-field ref="director.name" color="teal" v-model="movie_to_edit.director.name" 
@@ -45,21 +52,14 @@
               label="Date de naissance" type="text">
             </v-text-field>
 
-            <b class="edit-color left">Liens</b><br>
-
             
-            <v-text-field ref="poster" color="teal" v-model="movie_to_edit.poster" 
-              label="Affiche du film" type="text">
-            </v-text-field>
             
-            <v-img v-bind:src="movie.poster" height="267px" width="200px"></v-img>
             
-            <div class="pt-3">
-              <b class="edit-color left">Informations complémentaires</b><br>
+              <b class="left">Informations complémentaires</b><br>
               <v-textarea ref="synopsys" color="teal" auto-grow v-model="movie_to_edit.synopsys" 
                 label="Synopsys" type="text" height="auto">
               </v-textarea>
-            </div>
+            
           </v-card-text>
           <v-card-actions>
             <router-link :to="{name:'home'}" tag="button">

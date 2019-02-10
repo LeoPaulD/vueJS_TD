@@ -1,7 +1,6 @@
 
 <template>
   <div id="app">
-    
       
               
               <h2>Nombre de films enregistrés : {{movies.length}}</h2>
@@ -12,10 +11,11 @@
                 placeholder="Rechercher..."></v-text-field>
             
           
-           
+           <v-layout d-flex>
+             
             <movie-item v-for="(movie,index) in movies_search" v-bind:key="movie.title" v-bind:movie="movie"
               v-on:remove="remove(index)"></movie-item>
-        
+           </v-layout>
    
   </div>
 </template>
